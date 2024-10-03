@@ -7,12 +7,12 @@ pipeline {
   }
   stages {
     stage ('Building'){
-      step {
+      steps {
         sh 'pip install -r requirements.txt 
       }
     }
     stage ('Testing'){
-      step {
+      steps {
         sh 'python -m unitest
       }
     }
